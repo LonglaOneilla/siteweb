@@ -1,10 +1,13 @@
 import React from 'react'
-import Navigation from './Navigation'
+//import Slider from './Slider'
+import Slideshow from './Slideshow'
+//import Navigation from './Navigation'
 
 const Home = () => {
   return (
     <div>
-      <Navigation/>
+    <Slideshow/>
+      
     </div>
   )
 }

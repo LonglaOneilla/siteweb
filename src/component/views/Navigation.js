@@ -32,7 +32,7 @@ const Navigation = () => {
                 </div>
             </nav>
             <nav className="second-nav flex">
-                <div className="left flex">
+                <div className=" flex">
                     <div className="logo">
                         <h3>BAIN & COMPANY</h3>
                     </div>
