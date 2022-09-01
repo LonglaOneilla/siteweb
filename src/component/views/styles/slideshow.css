@@ -18,7 +18,17 @@
     }
   }
   
-  img {
-    -webkit-animation: zoom 10s;
-    animation: zoom 60s;
+  .carousel .zoom > img {
+    -webkit-animation: zoom 10s ;
+    animation: zoom 10s infinite;
   }
+
+  img{
+    height: 500px;
+  }
+
+  .carousel{
+    height: 500px;
+  }
+
+  

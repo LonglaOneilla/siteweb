@@ -59,6 +59,7 @@ li{
     text-transform: capitalize;
     list-style: none;
 }
+
 a{
     text-decoration: none;
     text-transform: capitalize;
@@ -67,3 +68,13 @@ a{
     color: black;
     font-weight: 400;
 }
+
+.vl {
+    background-color: black !important;
+    align-items: center;
+    width: 2px !important;
+    height: 100% !important;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  
+  }

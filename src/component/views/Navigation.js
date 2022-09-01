@@ -24,7 +24,7 @@ const Navigation = () => {
                 </div>
                 <div className="right flex">
                     <div className="global">
-                        <span>global <vl /> english </span>
+                        <span>global <span className="vl"></span> english </span>
                     </div>
                     <div className="folder">
                         <span>red folder</span>
