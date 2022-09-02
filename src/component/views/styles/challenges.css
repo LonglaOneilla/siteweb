@@ -1,14 +1,17 @@
 .challenges {
-    padding: 1rem;
+    padding-right: 1rem;
     padding-top: 5rem;
-    float: left;
     display:flex;
+    margin:0px;
+    left: 0;
+    justify-content: space-evenly;
   }
   
   .help-content {
     font-family: Verdana;
     justify-items: center !important;
     justify-content: center !important;
+    float: left !important;
   }
   
   .help-image {

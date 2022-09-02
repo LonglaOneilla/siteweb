@@ -1,25 +1,34 @@
 
 //import React, { Component } from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index";
+//import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index";
 import './styles/slideshow.css'
+import Carousel from 'react-bootstrap/Carousel';
+
 import { v4 as uuid } from 'uuid';
 import sliderdata from '../data/sliderdata'
 
 const Slideshow = () => {
     return (
         <div className="carousel-div">
-            <Carousel className='carousel' autoPlay interval="9000"
-                showThumbs={false}
-                infiniteLoop useKeyboardArrows animationHandler='fade' >
+        <Carousel className='carousel' fade>
                 {sliderdata.slides.map((slide) => (
-                    <div key={uuid()} className='zoom'>
-                        <img src={slide.image} alt='image1' />
-                        <p className="legend">Legend 1</p>
-                    </div>
-                ))}
-
+                    <Carousel.Item interval={5000} key={uuid()} className='zoom'>
+                        <img
+                            className="cassimg d-block w-100"
+                            src={slide.image}
+                            alt="First slide"
+                            width='auto'
+                            height='520px'
+                        />
+                        <Carousel.Caption className='capt'>
+                            <h5>{slide.title}</h5>
+                            <p>{slide.caption}</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                
+            ))}
             </Carousel>
+            
         </div>
     )
 }

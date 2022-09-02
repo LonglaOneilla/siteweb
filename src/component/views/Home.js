@@ -1,4 +1,5 @@
 import React from 'react'
+import Achievement from './Achievement'
 import Challenges from './Challenges'
 //import Slider from './Slider'
 import Slideshow from './Slideshow'
@@ -9,6 +10,7 @@ const Home = () => {
     <div>
     <Slideshow/>
       <Challenges/>
+      <Achievement/>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import { Container, Row, Col, } from 'react-bootstrap'
 import { v4 as uuid } from 'uuid';
 import sliderdata from '../data/sliderdata'
 import './styles/challenges.css'
+import { FaAngleRight } from "react-icons/fa";
 
 const Challenges = () => {
     return (
@@ -26,6 +27,9 @@ const Challenges = () => {
                                 </button>
                             ))
                         }
+                        <span className="Link">
+                                                    see all <FaAngleRight />
+                                                </span>
 
                     </Col>
                     <Col xs={12} md={5} sm={5} className='help-image'>
